@@ -26,7 +26,7 @@ jobs:
         run: dotnet tool install -g Microsoft.Web.LibraryManager.Cli
 
       - name: Libman restore
-        run: (cd ${{ env.GITHUB_WORKSPACE }}/src/Web/KyleJulianDev.Web && libman restore)
+        run: (cd ${{ GITHUB_WORKSPACE }}/src/Web/KyleJulianDev.Web && libman restore)
         
       - name: Build And Deploy
         id: builddeploy
