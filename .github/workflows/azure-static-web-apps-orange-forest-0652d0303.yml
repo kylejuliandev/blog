@@ -21,8 +21,6 @@ jobs:
           
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v3.2.0
-        with:
-          cache: true
           
       - name: Dotnet Install Libman
         run: dotnet tool install -g Microsoft.Web.LibraryManager.Cli
